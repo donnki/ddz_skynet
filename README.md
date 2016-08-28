@@ -13,6 +13,18 @@ simple implemetation of doudizhu(斗地主), based on [skynet](https://github.co
 
 使用sproto，具体协议见proto目录。
 
+## 如何运行
+进入目录后，服务端使用：
+```
+./run.sh
+```
+
+客户端使用：
+```
+./client.sh 玩家姓名
+```
+如果要在多台不同机器上运行，需要更改client.sh脚本，把127.0.0.1的IP地址改成服务器IP即可。
+
 ##如何编译
 clone 下本仓库。
 更新 submodule ，服务器部分需要用到 skynet ；客户端部分需要用到 lsocket 。
