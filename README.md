@@ -9,7 +9,7 @@ simple implemetation of doudizhu(斗地主), based on [skynet](https://github.co
 * 游戏开始时叫地主&抢地主的基本逻辑
 * 斗地主玩法的全部规则实现
 
-大概是花了3天左右时间写的，功能还比较不完善，主要的时间也花在了斗地主的规则上。而像复用game、room这几个skynet service，以及一些网络处理细节上还未来得及做，留待后续有时间处理吧。
+大概是花了3天左右时间写的demo，功能比较不完善，主要的时间也花在了斗地主的规则上。而像复用game、room这几个skynet service，以及一些网络处理细节上还未来得及做，留待后续有时间处理吧。
 
 使用sproto，具体协议见proto目录。
 
