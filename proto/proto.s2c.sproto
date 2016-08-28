@@ -1,0 +1,74 @@
+.package {
+	type 0 : integer
+	session 1 : integer
+	ud 2 : string
+}
+
+push 1 {
+	request {
+		text 0 : string
+	}
+}
+
+onjoinroom 2{
+	request {
+		index 0: integer
+		userid 1: string
+	}
+}
+
+onleftroom 3{
+	request {
+		index 0: integer
+		userid 1: string
+	}
+}
+
+onuserready 4{
+	request {
+		index 0: integer
+		userid 1: string
+	}
+}
+
+heartbeat 5 {}
+
+ongameready 6 {
+	request {
+		cards 0: string
+		first 1: integer
+	}
+}
+
+onrequestmaster 7 {
+	request {
+		rate 0: integer
+		index 1: integer
+		next 2: integer
+	}
+}
+
+ongamestart 8 {
+	request {
+		master 0: integer
+		excards 1: string
+	}
+}
+
+onplay 9 {
+	request {
+		cards 0: string
+		index 1: integer
+		next 2: integer
+		ok 3: boolean
+	}
+}
+
+ongameover 10 {
+	request {
+		farmerwin 0: boolean
+		p1score 1: integer
+		p2score 2: integer
+		p3score 3: integer
+	}
+}
